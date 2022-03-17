@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="img/Poké_Ball_icon.svg.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+		<title>Poke-Inspector</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Poke-Inspector</h1>
+			<div id="searchbar">
+				<input id='poke1' type="text" name="" value="">
+				<button type="button" id="searchButton" name="search">Search Pokemon</button>
+				<button type="button" id="randomPoke" name="random">Random!</button>
+			</div>
+			<span class="dot"></span>
+		</header>
+		<main>
+			<h2 id='name'></h2>
+			<img id='image' src="" alt="" class="hidden">
+			<div>
+				<h4 id="type1"></h4>
+				<h4 id="type2"></h4>
+			</div>
+			<div id="styles">
+				<h4 id='attackType'></h4>
+				<h4 id='defenceType'></h4>
+			</div>
+			<h3 class ="hidden" id="weaknessesLabel">Defending Type Matchup:</h3>
+			<h4 id="weaknesses"></h4>
+		</main>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

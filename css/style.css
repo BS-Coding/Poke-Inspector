@@ -1,0 +1,102 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  margin: 0 auto;
+  width: 15%;
+  height: auto;
+  min-width: 200px;
+  outline: 1px solid black; 
+}
+body, header, main{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+div{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  width: 40%;
+  min-width: 300px;
+}
+
+#searchbar{
+  justify-content: center;
+  min-width: 415px;
+}
+h1{
+  margin-bottom: 15px;
+  font-size: 2rem;
+  text-shadow: 5px 5px 5px black;
+}
+#name, #weaknessLAbel{
+  margin-bottom: 0;
+}
+header{
+  background-color: red;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  border-bottom: 4px solid rgb(63, 63, 63);
+}
+#name{
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 30px;
+}
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid rgb(63, 63, 63);
+  position: absolute;
+  top: 135px;
+  margin: 0;
+}
+#weaknesses{
+  margin-top: 0;
+}
+@media screen and (max-width: 600px) {
+  #searchbar{
+    width: 70%;
+    min-width: 200px;
+    flex-flow: column;
+  }
+  #searchbar > button{
+    margin: 5px auto;
+    padding: 10px;
+    min-width: 50%;
+    font-size: 0.75rem;
+  }
+  #styles{
+    flex-flow: column;
+    align-items: center;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .dot{
+    top: 200px
+  }
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.error{
+  color: red;
+}
+.hidden{
+  display: none;
+}
